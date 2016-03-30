@@ -41,16 +41,7 @@ input {
   -webkit-transition: 0.9s linear all;
   -webkit-transition-timing-function: linear;
 }
-/*
-.fade.ng-enter.ng-leave.ng-leave-active  {
-  opacity: 0;
 
-}
-
-.fade.ng-enter.ng-enter-active.ng-leave{
-  opacity: 1;
-}
-*/
 li:hover {
     cursor: pointer;
 }
