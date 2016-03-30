@@ -1,32 +1,29 @@
 .string {
   margin-left: 120px;
 }
-.spsec{
-  float:right;
-	color:red;
-  width:200px;
-  margin-right:65%;
-  font-size:12px;
+.spsec {
+  float: right;
+  color: red;
+  width: 200px;
+  margin-right: 65%;
+  font-size: 12px;
 }
-
 .none {
-  color:red;
-  font-size:12px;
-  border:solid 1px #C0C0C0;
+  color: red;
+  font-size: 12px;
+  border: solid 1px #C0C0C0;
   border-radius: 4px;
 }
 input {
-  border:solid 2px #C0C0C0;
+  border: solid 2px #C0C0C0;
 }
-
 .mov {
   display: inline-block;
-  color:green;
+  color: green;
   animation: roll 1s infinite;
   transform: rotate(360deg);
   opacity: 1;
 }
-
 @keyframes roll {
   0% {
     transform: rotate(0);
@@ -35,13 +32,11 @@ input {
     transform: rotate(360deg);
   }
 }
-
 .fade {
   transition: 0.9s linear all;
   -webkit-transition: 0.9s linear all;
   -webkit-transition-timing-function: linear;
 }
-
 li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }

@@ -1,33 +1,35 @@
-(function(){
-"use strict";
-angular.module('myApp', [])
+(function() {
+  "use strict";
+  angular.module('myApp', [])
     .controller('DataCtrl', function($scope, $http) {
 
-       $http.get("js/data.json").then(function(response){
-          $scope.items = response.data.store;
-        });
+      $http.get("js/data.json").then(function(response) {
+        $scope.items = response.data.store;
+      });
 
-       $scope.addItem = function() {
-       $scope.items.push($scope.item);
-       $scope.item = {}; };
+      $scope.addItem = function() {
+        $scope.items.push($scope.item);
+        $scope.item = {};
+      };
 
-       $scope.removeItem = function(index) {
-          $scope.items.splice(index, 1); };
+      $scope.removeItem = function(index) {
+        $scope.items.splice(index, 1);
+      };
     })
     .directive('submitData', submitData)
     .directive('displayData', displayData);
 
-function submitData(){
-  return{
-    restrict:'E',
-    templateUrl:'submit.html'
+  function submitData() {
+    return {
+      restrict: 'E',
+      templateUrl: 'submit.html'
+    };
   };
-};
 
-function displayData(){
-  return {
-    restrict: 'A',
-    templateUrl:'display.html'
+  function displayData() {
+    return {
+      restrict: 'A',
+      templateUrl: 'display.html'
+    };
   };
-};
 })();
