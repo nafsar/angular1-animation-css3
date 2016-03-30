@@ -1,0 +1,5 @@
+<ol>
+  <li ng-repeat="item in items" class="fade"> <span class="none" ng-if="!item.name">Empty!&nbsp;<span class="mov">*</span></span>{{item.name}}
+    <span ng-click="removeItem($index)"><span class="spsec"> <img src="images/del.png"> {{item.name}}</span></span>
+  </li>
+</ol>

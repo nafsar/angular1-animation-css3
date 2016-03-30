@@ -1,0 +1,14 @@
+{
+	"store": [{
+		"name": "Orange"
+	},
+  {
+		"name": "Tomato"
+	}, {
+		"name": "Apple"
+	}, {
+		"name": "Melon"
+	}, {
+		"name": "Kiwi"
+	}]
+}
